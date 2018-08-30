@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:400,700&subset=latin-ext');
+@import './sass/variables';
+
+body {
+  background-color:$background;
+  color:$dark-gray;
+  font: {
+    family: $main-font;
+    size: 17px;
+  }
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $skyblue;
+  font-weight: bold;
+}
+
+.tagline {
+  color: $light-gray;
+}
+
+.spinner {
+  margin: 25px auto;
+}
+.mat-progress-spinner circle, .mat-spinner circle {
+  stroke: $skyblue;
+}
+
+.extra-lg > .modal-dialog {
+  max-width: 90%;
+  width: 700px;
+}

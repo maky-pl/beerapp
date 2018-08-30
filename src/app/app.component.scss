@@ -1,0 +1,24 @@
+@import '/../sass/variables';
+
+main {
+  padding: 6% 0;
+}
+
+header {
+  background: $skyblue;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.app-title,
+.app-desc {
+  color: #fff;
+
+  span {
+    font-weight: lighter;
+  }
+}
+
+.app-title:hover {
+  cursor: pointer;
+}

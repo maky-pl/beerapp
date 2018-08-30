@@ -1,0 +1,23 @@
+<mat-progress-spinner mode="indeterminate" class="spinner" *ngIf="noItemsLoaded"></mat-progress-spinner>
+
+<div class="row align-items-stretch"
+     infiniteScroll
+     (scrolled)="loadMore()">
+
+  <app-grid-item
+    *ngFor="let item of beers"
+    [beer]="item"
+    (click)="showModal(item)"
+    class="col-xs-12 col-sm-6 col-lg-4">
+  </app-grid-item>
+
+</div>
+
+<app-modal
+  [beer]="modalBeer"
+  [similarBeers]="similarBeers">
+</app-modal>
+
+<div class="text-center">
+  <h2 *ngIf="noSearchResults">Nothing to show... :(</h2>
+</div>
